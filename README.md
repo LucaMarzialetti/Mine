@@ -1,2 +1,1 @@
-# Mine
-Testig repo
+cg2015
