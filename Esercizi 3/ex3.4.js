@@ -1,6 +1,5 @@
 //Esercizi-3 js
 
-
 //************************ GENERAZIONE DELL'INPUT
 var data = [
 	{id:'01', name:'duffy'},

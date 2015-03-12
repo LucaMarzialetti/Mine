@@ -1,6 +1,5 @@
 //Esercizi-3 js
 
-
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che genera un array di dimensione n di interi casuali
 function randomNatural(int, range){

@@ -1,6 +1,5 @@
 //Esercizi-3 js
 
-
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che ritorna l'array con i primi n numeri naturali
 function firstNatural(int){
