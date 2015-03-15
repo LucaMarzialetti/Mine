@@ -8,14 +8,26 @@ function randomInt(int){
 	return parseInt(((Math.random()*int)+1+"").split(".")[0]);
 }
 
+function firstNatural(int){
+	var i = int;
+	var array = [];
+	array.push(0);
+	if(isNaN(int))
+		i=0;
+	while(i--)
+		array.push(int-(i));
+	return array;
+}
+
 //************************ Esercizio 06
 //Implementazione ONE-LINE
 function ex6(){
 	var ran = randomInt(100);
-	var size = parseInt(ran/2)+1;
-	console.log("Valore randomizzato: "+ran+", Numeri pari: "+size);
-	return Array.apply(null, new Array(size)).map(function(){return 0;}).map(function(x,i){return i*2;});
-}
+	var array = [];
+	console.log("Valore randomizzato: "+ran);
+	array = firstNatural(ran);
+	return array.filter(function(x){if(x%2===0) return x;});
+}	
 
 
 //************************ TESTING

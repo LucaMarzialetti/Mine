@@ -11,13 +11,15 @@ function randomInt(int){
 
 //************************ Esercizio 05
 //Implementazione ONE-LINE
-function ex5(){
-	var array = [0,0,0];
-	array = array.map(function(){return randomInt(100);}).sort(function(x1,x2){return x2-x1;});
+function ex5(int){
+	var array = [];
+	while(int--){
+		array.push(randomInt(100));
+	}
 	console.log("Estratti ["+array+"]");
-	return array[0];
+	return array.sort(function(x1,x2){return x1-x2;}).pop();
 }
 
 
 //************************ TESTING
-ex5();
+ex5(3);
