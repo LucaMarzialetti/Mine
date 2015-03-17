@@ -1,4 +1,9 @@
 //Esercizi-3 js
+//write a function that pushes into an array the first n natural numbers
+//filter out odd number and return the even ones
+//double each even number obtained
+//return only numbers divisible by 4
+//sum all the remaining numbers
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che ritorna l'array con i primi n numeri naturali

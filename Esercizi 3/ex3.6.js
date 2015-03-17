@@ -1,4 +1,6 @@
 //Esercizi-3 js
+//write a function that randomizes a number in range (0..100), then prints all the even numbers from 0 to the randomized
+
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]

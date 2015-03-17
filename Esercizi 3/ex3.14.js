@@ -1,4 +1,5 @@
 //Esercizi-3 js
+//write a funciton that randomizes two numbers and prints their average and standard deviation
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]
@@ -10,7 +11,7 @@ function randomNatural(min,max,int){
 		max = 0;
 	if(isNaN(min))
 		min = 0;
-	for(var i = 1; i <= int; i++)
+	while(int--)
 		array.push(randomInt(min,max));
 	return array;
 }
@@ -24,25 +25,22 @@ function randomInt(min,max){
 //************************ Esercizio 014
 //Implementazione ONE-LINE
 function ex14(min,max){
-	var rand1 = randomInt(min,max);
-	var rand2 = randomInt(min,max);
-	console.log("Estratto "+rand1+", "+rand2);
-	var gcd = gcdCalc(rand1,rand2);
-	return (rand1*rand2)/gcd;
+	var samples = [];
+	samples.push(randomInt(min,max));
+	samples.push(randomInt(min,max));
+	console.log("Estratti("+samples.length+"): "+samples);
+	return stdDev(samples);
 }
 
 //Funzione che calcola il GCD di due numeri
-function gcdCalc(a,b){
-	var d = 1;
-	var currentD = d;
-	while( (d <= a) && (d <= b) ){
-		if(a%d==0 && b%d==0){
-			currentD=d;
-		}	
-		d++;
-	}
-	return currentD;
+function stdDev(samples){
+	var averageN = average(samples);
+	var sum = samples.reduce(function(x){return Math.pow((x-averageN),2)})
+	return Math.sqrt(sum/samples.length);
 }
 
+function average(samples){
+	return samples.reduce(function(x,y){return x+y;})/samples.length;
+}
 //************************ TESTING
 ex14(1,100);

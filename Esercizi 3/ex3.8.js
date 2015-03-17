@@ -1,4 +1,8 @@
 //Esercizi-3 js
+//write a funciton that randomizes a number in range (0..100), 
+//then prints all the odd numbers from 40 to that one. 
+//If the number was smaller than 40, print all the numbers down to the randomized one (i.e. if the result was 37, you should print: 40, 39, 38, 37)
+
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]

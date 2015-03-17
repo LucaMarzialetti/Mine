@@ -1,4 +1,8 @@
 //Esercizi-3 js
+//write a funciton that randomizes two numbers and prints the smallest number that is greater than one,
+//such that both numbers are divided by it with no remainder. 
+//For instance, for 9 and 6 you should print 3. If there isn't one a proper note should be printed
+
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]
@@ -10,7 +14,7 @@ function randomNatural(min,max,int){
 		max = 0;
 	if(isNaN(min))
 		min = 0;
-	for(var i = 1; i <= int; i++)
+	while(int--)
 		array.push(randomInt(min,max));
 	return array;
 }

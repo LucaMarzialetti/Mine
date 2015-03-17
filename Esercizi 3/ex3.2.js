@@ -1,4 +1,7 @@
 //Esercizi-3 js
+//write a function that pushes into an array n random integer numbers
+//filter even numbers and return the odd ones
+//sort obtained numbers from the smallest to the largest
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che genera un array di dimensione n di interi casuali

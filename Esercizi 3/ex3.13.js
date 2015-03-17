@@ -1,4 +1,5 @@
 //Esercizi-3 js
+//write a funciton that randomizes two numbers and prints their least common multiplication of them. (use lcm for details)
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]
@@ -27,13 +28,22 @@ function ex13(min,max){
 	var rand1 = randomInt(min,max);
 	var rand2 = randomInt(min,max);
 	console.log("Estratto "+rand1+", "+rand2);
-	return stdDev(rand1,rand2);
+	var gcd = gcdCalc(rand1,rand2);
+	return (rand1*rand2)/gcd;
 }
 
 //Funzione che calcola il GCD di due numeri
-function stdDev(a,b){
-	var dev = 1;
-	return dev;
+function gcdCalc(a,b){
+	var d = 1;
+	var currentD = d;
+	while( (d <= a) && (d <= b) ){
+		if(a%d==0 && b%d==0){
+			currentD=d;
+		}	
+		d++;
+	}
+	return currentD;
 }
+
 //************************ TESTING
 ex13(1,100);

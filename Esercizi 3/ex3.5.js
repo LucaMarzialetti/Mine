@@ -1,4 +1,5 @@
 //Esercizi-3 js
+//write a function that randomizes 3 numbers in range (0.. 100) and prints the largest one
 
 //************************ GENERAZIONE DELL'INPUT
 //Funzione che che estre un numero casuale compreso nell'intervallo (0,int] di base è [0,10]
